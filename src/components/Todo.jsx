@@ -3,7 +3,7 @@ import todo_icon from '../assets/todo_icon.png';
 import TodoItems from './TodoItems';
 
 const Todo = () => {
-    const [todoList, setTodoList] = useState([]); // Initialize state to hold the list of todos
+    const [todoList, setTodoList] = useState(localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : []); // Initialize state to hold the list of todos
 
     const inputRef = useRef(); // Create a ref to access the input element
 
@@ -53,7 +53,7 @@ const Todo = () => {
 
     // useEffect hook to log the todo list whenever it changes
     useEffect(() => {
-        console.log(todoList); // Log the current todo list to the console
+        localStorage.setItem("todos", JSON.stringify(todoList))
     }, [todoList]); // Dependency array: only run the effect when todoList changes
 
     return (
