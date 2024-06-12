@@ -12,6 +12,7 @@ This is a simple To-Do List application built using React. It allows users to ad
 
 ## Project Structure
 
+```bash
 TODO-LIST/
 │
 ├── node_modules/
@@ -19,14 +20,14 @@ TODO-LIST/
 ├── public/
 │
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── Todo.jsx
-│ │ ├── TodoItems.jsx
-│ ├── App.css
-│ ├── App.jsx
-│ ├── index.css
-│ ├── main.jsx
+│   ├── assets/
+│   ├── components/
+│   │   ├── Todo.jsx
+│   │   ├── TodoItems.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
 │
 ├── .eslintrc.cjs
 ├── .gitignore
@@ -37,7 +38,7 @@ TODO-LIST/
 ├── README.md
 ├── tailwind.config.js
 ├── vite.config.js
-
+```
 
 ## Installation
 
